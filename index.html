@@ -1,62 +1,83 @@
 <!DOCTYPE html>
+
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Leonidas Esteban</title>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-  </head>
-  <body>
-    <header>
-      <div>
-        <figure>
-          <img src="images/logo.png" alt="Logo de http://leonidasesteban.com" />
-        </figure>
-        <nav>
-          <ol>
-            <li>
-              <a href="#">Portafolio</a>
-            </li>
-            <li>
-              <a href="#">Experiencia</a>
-            </li>
-            <li>
-              <a href="#">Trabajemos juntos</a>
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </header>
-    <section>
-      <h1>
-        Hola! Soy <strong>Leonidas Esteban</strong> Desarrollador <br/> <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
-      </h1>
-      <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> 
-    </section>
-    <section>
-      <h2>Portafolio (Proyectos Destacados)</h2>
-      <article>
-        <h3>Platzi Video</h3>
-        <h6>React Native / React</h6>
-        <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
-        <p><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
-        <p>Platzi Video fue el resultado de 3 meses de trabajo
-            para crear la mejor app para enseñar el funcionamiento
-            de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
-      <img  width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
-      </article>
-    </section>
-    <section>
-      <h2>Más sobre mi experiencia</h2>
-      <article>
-        <figure>
-          <img src="images/platzi-conf.jpg" width="500" />
-        </figure>
-        <h3>PlatziConf México 2018</h3>
-        <p>El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-        <a>Ver Plática</a>
-      </article>
-    </section>
-    <section>sección contacto</section>
-    <footer>footer</footer>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Rodrigo Burgos</title>
+        <link rel="icon" type="image/png" href="desarrollo-web-portafolio/desarrollo-web-portafolio/images/favicon.png" />
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header class="header">
+            <div>
+                <!-- Logo -->
+                <figure class="logo">
+                    <img src="desarrollo-web-portafolio/desarrollo-web-portafolio/images/logo.png" alt="Logo de http://leonidasesteban.com">
+                </figure>
+                <!-- Menu -->
+                <nav class="menu">
+                    <ol>
+                        <li>
+                            <a class="link" href="#portafolio">Portafolio</a>
+                        </li>
+                        <li>
+                            <a class ="link" href="#eventos">Experiencia</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#contacto">Trabajemos Juntos</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </header>
+        <!-- Seccion Principal -->
+        <section class="hero">
+            <h1>
+                Hola! Soy Rodrigo Burgos <br/> <strong>Desarrollador de Front-End con</strong><br/> pasion por el aprendizaje 
+            </h1>
+            <img src="desarrollo-web-portafolio/desarrollo-web-portafolio/images/hero.jpg" width="500" height="300" alt="imagen del sitio"/>
+        </section>
+       <!-- Seccion Portafolio -->
+        <section id="portafolio" class="portafolio">
+            <h2>Portafolio (Proyectos Destacados)</h2>
+            <div class="project-details">
+                <article class="project">
+                    <h3 class="project-title">Platzi Video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"> <small><strong>01/01/18</strong></small></p>
+                    <p class="project-url"> <small><strong>Puedes verlo en:: www.platzi.com/native</strong></small></p>
+                    <p class="project-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <figure class="project-imageContainer">
+                        <img class="project-image" width="500" src="desarrollo-web-portafolio/desarrollo-web-portafolio/images/platzi-video-react-native.png" alt="proyecto de react">
+                    </figure>
+                </article>
+            </div>
+        </section>
+        <!-- Seccion Eventos -->
+        <section id="eventos">
+            <h2>Mas sobre mi Experiencia</h2>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="desarrollo-web-portafolio/desarrollo-web-portafolio/images/platzi-conf.jpg" width="500"  alt="otra imagen"/>
+                </figure>
+                <h3 class="event-title">Platzi Conf 2018</h3>
+                <p class="event-description">El evento mas grande sobre gente que quiere aprender mas de internet</p>
+                <img src="desarrollo-web-portafolio/desarrollo-web-portafolio/images/platzi-video-react-native.png" width="500" alt="proyecto del curso de react native" />
+                <a href="">Ver Platica</a>
+            </article>
+        </section>
+        <!-- Seccion Contacto -->
+        <section id="contacto" class="contact">
+            <form action="/Suscripcion" class="form-email">
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="text" placeholder="Dejame tu Email" id="email">
+                <button>Enviar</button>
+            </form>
+        </section>
+        <section>Footer</section>
+
+    </body>
 </html>
