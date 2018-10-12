@@ -55,7 +55,7 @@ h1 strong{
     margin-bottom: 15px;
     padding: 20px;
     background: #fafafa;
-    display: flex;
+
 }
 
 .project-imageContainer{
@@ -70,4 +70,18 @@ h1 strong{
 .header a{
     color: white;
     text-decoration: none;
+}
+
+.flexbox{
+    display: flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    flex-shrink: 0;
 }
